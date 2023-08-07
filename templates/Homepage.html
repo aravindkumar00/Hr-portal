@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="body2">
+    <h1 style="padding-top:30px">Profile checking...</h1>
+    {% if error1 %}
+        <p class="p1">{{error1}}</p>
+    {% endif %}
+    <form action="{{ url_for('store_details') }}" method="POST" enctype="multipart/form-data">
+        <div class="div1">
+            <label class="l1" for="name">Name</label>
+            <input class="txt1" type="text" id="name" name="name" required>
+        </div>
+        <div class="div1">
+            <label class="l1" for="email">Email</label>
+            <input class="txt1" type="text" id="email" name="email" required>
+        </div>
+        <div class="div1">
+            <label class="l1" style="margin-right:40px">Please upload a profile</label>
+        </div>
+        <div class="div3">
+            <input class="f1" type="file" id="profile" name="resume" required>
+        </div>
+        <div style="margin-left:500px;padding-top:5px">
+            <label class="l1" for="skills">Enter the skill</label><br>
+            <input class="txt2" type="text" id="skills" name="skills" required>
+        </div>
+        <div style="margin-left:550px;padding-top:10px">
+            <input class="b2" type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
+

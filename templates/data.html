@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    {% if search_result %}
+    <h1>Profile is having these details, please check</h1>
+      <ul>
+        {% for result in search_result %}
+          <li>{{ result }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <h1>No Skill present in this file.</h1>
+    {% endif %}
+    <button id="redirect-button">Go to Homepage</button>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+      $(document).ready(function() {
+          $('#redirect-button').click(function() {
+              window.location.href="/home";
+          });
+      });
+      
+      $(document).ready(function() {
+        var skill = '{{ skill }}';
+        $('li').each(function() {
+          var text = $(this).html();
+          var highlightedText = highlight_search_word(text, skill);
+          $(this).html(highlightedText);
+        });
+      });
+    </script>
+  </body>
+</html>

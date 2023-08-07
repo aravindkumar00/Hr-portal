@@ -1,0 +1,37 @@
+what is summitAI
+	
+	SummitAI IT is a web-based tool 
+	it is used to manage and monitoring activities of end-to-end solution for your IT infrastructure-ralated
+	By using SummitAI tool we can provide the streamline it service delivery,improve productivity and enhance the enduser experience
+
+Vision of SummitAI
+
+	SummitAI mission is to help you to achieve greater levels of speed, responsiveness, and productivity 
+	by bringing service and asset management together in one platform with AI-driven knowledge intelligence
+	aim to deliver exceptional services to their end-users with inteligence and automation
+	managing complex IT environments, like disparate data sources, and an increasing volume of service requests
+
+Services provided by SummitAI	
+
+	Symphony SUMMITAI provides a wide range of IT service management (ITSM) 
+	services that enable IT organizations to manage and deliver services more efficiently and effectively
+	some services are :
+		Incident Management (IM)
+		Problem Management (PM)
+		Change Management (CM)
+		Configuration Management Database (CMDB)
+		Call Management.
+		Service Request Management (SRM)
+		Knowledge Management (KM)
+		Release Management (RM)
+
+Services used by 
+	
+	whoever wants to use IT services for their business operations in all kind of organizations we can use these summitAI services
+	some oraganizations are:
+		Technology and consultant
+		Banking finacial and insurance
+		Health care and consumer
+		Automobile and manufacturing services
+		goverment agencies
+		Educational institues
